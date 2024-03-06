@@ -1,6 +1,8 @@
 body {
     background-color: rgb(238, 198, 218);
     margin: 50px;
+    background-image: url(images/background_lb.jpg);
+    background-size: cover;
 }
 
 header {
@@ -14,7 +16,6 @@ header {
     padding: 20px 0 0 0;
     align-items: center;
     align-content: center;
-
 }
 
 
@@ -67,6 +68,10 @@ h1{
 }
 
 main section ul {
+    display:flex;
+}
+
+main section .menu-type {
     width: 1200px;
     margin: 0 auto 48px auto;
     display: grid;
@@ -80,17 +85,11 @@ main li img {
     object-fit: cover;
 }
 
- main li {
+ main .menu-type li {
     display: flex;
-    background-color: rgb(234, 172, 212);
-    box-shadow: 5px, 5px, 4px, rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     overflow: hidden;
 }
 
-.item-content {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
