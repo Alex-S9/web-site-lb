@@ -1,21 +1,23 @@
 body {
-    background-color: rgb(238, 198, 218);
-    margin: 50px;
-    background-image: url(images/background_lb.jpg);
+    background-image: url(images/background/background_lb.jpg);
     background-size: cover;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 header {
     position: absolute;
     display: flex;
-    justify-content: space-between;
-    background-color: rgb(234, 172, 212);
+    background: linear-gradient(70deg, rgb(231, 173, 204), rgb(248, 168, 219));
     width: 100%;
     top: 0;
     left: 0;
+    right: 0;
     padding: 20px 0 0 0;
     align-items: center;
     align-content: center;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -23,7 +25,7 @@ img {
     width: 120px;
     height: 80px;
     margin: 9px auto;
-    padding: 5px 5px 3px 8px;
+    padding: 5px auto 3px 8px;
 
 }
 
@@ -34,21 +36,20 @@ img {
 
 .component-menu-list{
     display: flex;
-    justify-content:space-between;
-    flex-direction: row;
-    padding:10px 100px 10px 10px;
-    width: 100%;
+    justify-content:center;
+    padding:10px 0px 10px 210px;
 }
 
 .menu-item {
     padding: 2px 10px;
     display: flex;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 a {
     text-decoration: none;
     padding: 2px 10px;
+    color: aliceblue;
 }
 
 a:hover {
@@ -56,19 +57,43 @@ a:hover {
     border-radius: 5px;
 }
 
+.images-us {
+    display: flex;
+}
+
+.images-us li div img {
+    width: 300px;
+    height: 280px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
 
 
 h1{
     text-align: center;
+    color: aliceblue;
 }
 
 .menu-one {
+    margin: 50px 0 auto 0;
     width: 100%;
     padding:100px 0 0 0;
 }
 
 main section ul {
     display:flex;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+}
+
+li {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    width: auto;
 }
 
 main section .menu-type {
@@ -93,3 +118,31 @@ main li img {
     overflow: hidden;
 }
 
+li:nth-of-type(9) {
+    grid-column: 1 / span 2;
+}
+
+
+.education {
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(70deg, rgb(231, 173, 204), rgb(248, 168, 219));
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+footer ul li {
+    padding: 0 80px;
+}
+
+footer ul li img {
+    width: 200px;
+    height: 200px;
+}
